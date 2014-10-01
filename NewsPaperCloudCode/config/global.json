@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "NewsPaper": {
+            "applicationId": "cMQLYNLSqoXzPALFmulSiTiJvdljC6dsiey7gweQ", 
+            "masterKey": "SQXzJ9XQPgxihShgRDveaACMrzy5HkSAr4kdGlJH"
+        }, 
+        "_default": {
+            "link": "NewsPaper"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.19"
+    }
+}

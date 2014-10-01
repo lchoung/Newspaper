@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="10" id="12"/>
+                <outlet property="loginView" destination="fuL-xX-yqv" id="oRQ-sm-7mr"/>
+                <outlet property="messageLabel" destination="AMx-OP-hH1" id="Eqe-6f-rFm"/>
+                <outlet property="view" destination="1" id="Ouh-eQ-MUA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="noBackgroundStar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ufd-yx-lvt">
+                    <rect key="frame" x="32" y="71" width="256" height="256"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="256" id="bTC-X5-5fD"/>
+                        <constraint firstAttribute="width" constant="256" id="r0V-sx-9sE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMx-OP-hH1">
+                    <rect key="frame" x="160" y="301" width="0.0" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuL-xX-yqv" customClass="FBLoginView">
+                    <rect key="frame" x="45" y="354" width="229" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                    </accessibility>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2H-Hy-trE">
+                    <rect key="frame" x="45" y="354" width="230" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="lAU-IO-7fr"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonTouchHandler:" destination="-1" eventType="touchUpInside" id="x2h-mT-s4I"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="np.png" translatesAutoresizingMaskIntoConstraints="NO" id="F9s-0a-yvt">
+                    <rect key="frame" x="40" y="209" width="240" height="228"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="228" id="Ig2-Wi-n3J"/>
+                        <constraint firstAttribute="width" constant="240" id="ZYo-B2-a7r"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="10">
+                    <rect key="frame" x="142" y="309" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="color" red="0.1137254902" green="0.2470588235" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="AMx-OP-hH1" firstAttribute="centerX" secondItem="10" secondAttribute="centerX" id="0Gb-7G-byF"/>
+                <constraint firstItem="n2H-Hy-trE" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="45" id="2db-gd-mXT"/>
+                <constraint firstAttribute="bottom" secondItem="n2H-Hy-trE" secondAttribute="bottom" constant="169" id="3Js-1f-62G"/>
+                <constraint firstItem="n2H-Hy-trE" firstAttribute="top" secondItem="10" secondAttribute="bottom" constant="8" symbolic="YES" id="47H-ac-v0y"/>
+                <constraint firstItem="Ufd-yx-lvt" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="32" id="63e-v3-bzi"/>
+                <constraint firstItem="n2H-Hy-trE" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="CbP-60-x0S"/>
+                <constraint firstItem="n2H-Hy-trE" firstAttribute="leading" secondItem="fuL-xX-yqv" secondAttribute="leading" id="E49-AU-5cm"/>
+                <constraint firstItem="n2H-Hy-trE" firstAttribute="top" secondItem="Ufd-yx-lvt" secondAttribute="bottom" constant="27" id="Eef-zl-Sgo"/>
+                <constraint firstItem="n2H-Hy-trE" firstAttribute="top" secondItem="fuL-xX-yqv" secondAttribute="top" id="Jdr-PI-ncW"/>
+                <constraint firstItem="AMx-OP-hH1" firstAttribute="centerX" secondItem="fuL-xX-yqv" secondAttribute="centerX" id="Q5O-IO-0b5"/>
+                <constraint firstAttribute="trailing" secondItem="F9s-0a-yvt" secondAttribute="trailing" constant="40" id="SF3-nY-mBa"/>
+                <constraint firstItem="AMx-OP-hH1" firstAttribute="centerX" secondItem="n2H-Hy-trE" secondAttribute="centerX" id="TPs-EC-xQC"/>
+                <constraint firstItem="n2H-Hy-trE" firstAttribute="bottom" secondItem="fuL-xX-yqv" secondAttribute="bottom" id="UOy-yE-zbi"/>
+                <constraint firstItem="10" firstAttribute="top" secondItem="AMx-OP-hH1" secondAttribute="bottom" constant="8" symbolic="YES" id="hax-JP-PnV"/>
+                <constraint firstItem="F9s-0a-yvt" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="40" id="icu-Yn-uad"/>
+                <constraint firstAttribute="trailing" secondItem="Ufd-yx-lvt" secondAttribute="trailing" constant="32" id="tEL-ec-dpJ"/>
+                <constraint firstAttribute="bottom" secondItem="F9s-0a-yvt" secondAttribute="bottom" constant="131" id="vPN-Rp-REu"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="noBackgroundStar.png" width="225" height="225"/>
+        <image name="np.png" width="240" height="240"/>
+    </resources>
+</document>

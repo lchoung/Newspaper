@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FBUManageViewController">
+            <connections>
+                <outlet property="edit" destination="FBy-hE-tfU" id="hpu-p9-rXq"/>
+                <outlet property="editButton" destination="w6C-v6-q4B" id="Y42-8z-GI7"/>
+                <outlet property="editView" destination="7qs-hM-G2U" id="Kca-pR-iaT"/>
+                <outlet property="logoutView" destination="OJx-el-iuK" id="fBU-qW-UZc"/>
+                <outlet property="posts" destination="NXT-v0-Adg" id="cVE-GN-4Cg"/>
+                <outlet property="postsButton" destination="doJ-1g-yKW" id="J0k-YF-Ahl"/>
+                <outlet property="postsView" destination="vVc-Zs-tzV" id="oVb-cq-YeG"/>
+                <outlet property="review" destination="7dG-WZ-Odm" id="Lq0-S2-Dr8"/>
+                <outlet property="reviewButton" destination="MTm-KG-lWj" id="YUt-Kw-a6v"/>
+                <outlet property="reviewView" destination="IR9-WQ-ohk" id="S7t-2h-qBJ"/>
+                <outlet property="v1" destination="gHr-yN-7tV" id="QX7-Rh-WYU"/>
+                <outlet property="v2" destination="cOw-ta-Mtz" id="A6C-Ee-g04"/>
+                <outlet property="v3" destination="oPb-89-DZf" id="JtR-rN-8Dq"/>
+                <outlet property="v4" destination="dDM-Np-tjS" id="6eh-Xw-DiX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJx-el-iuK">
+                    <rect key="frame" x="14" y="408" width="286" height="66"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Gp-pF-YWG">
+                            <rect key="frame" x="5" y="0.0" width="19" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.86627072699999996" green="0.74846657549999995" blue="0.35298768450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMA-aa-J6H">
+                            <rect key="frame" x="0.0" y="0.0" width="299" height="117"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="logout:" destination="-1" eventType="touchUpInside" id="qoh-xV-90P"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxI-aq-JQY">
+                            <rect key="frame" x="40" y="20" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="logout.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="logout:" destination="-1" eventType="touchUpInside" id="w7D-Aq-FLo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jq-0m-WjF">
+                            <rect key="frame" x="170" y="15" width="96" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                            <state key="normal" title="LOG OUT">
+                                <color key="titleColor" red="0.86844308039999996" green="0.7502281972" blue="0.39318878200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="logout:" destination="-1" eventType="touchUpInside" id="oiT-hK-Z9R"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="0fh-Dl-JOY"/>
+                        <constraint firstAttribute="width" constant="286" id="XAZ-ie-ue0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVc-Zs-tzV">
+                    <rect key="frame" x="14" y="105" width="286" height="66"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="krF-Ek-CLU">
+                            <rect key="frame" x="5" y="0.0" width="19" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.18140016270000001" green="0.65209417390000002" blue="0.86627072699999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7s-Sc-V1o">
+                            <rect key="frame" x="0.0" y="0.0" width="299" height="117"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toPosts:" destination="-1" eventType="touchUpInside" id="Zsx-5C-UiT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doJ-1g-yKW">
+                            <rect key="frame" x="40" y="20" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="user.png"/>
+                            <connections>
+                                <action selector="toPosts:" destination="-1" eventType="touchUpInside" id="8HM-Yk-ZNC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXT-v0-Adg">
+                            <rect key="frame" x="206" y="15" width="60" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                            <state key="normal" title="ME">
+                                <color key="titleColor" red="0.18140016270000001" green="0.65209417390000002" blue="0.86627072699999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toPosts:" destination="-1" eventType="touchUpInside" id="kxp-Qq-WXZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="286" id="KYU-9y-DuR"/>
+                        <constraint firstAttribute="height" constant="66" id="xEG-qa-C0R"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qs-hM-G2U">
+                    <rect key="frame" x="14" y="206" width="286" height="66"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJP-Jb-1Et">
+                            <rect key="frame" x="0.0" y="0.0" width="299" height="117"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.14209167790217447" green="0.40589250964424201" blue="0.56941565688775508" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toEdit:" destination="-1" eventType="touchUpInside" id="jfG-so-4vF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6C-v6-q4B">
+                            <rect key="frame" x="40" y="18" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="edit.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toEdit:" destination="-1" eventType="touchUpInside" id="8Av-Jf-0FX"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CXS-Ty-37m">
+                            <rect key="frame" x="5" y="0.0" width="19" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.14209167789999999" green="0.40589250960000001" blue="0.56941565689999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.18140016270000001" green="0.65209417390000002" blue="0.86627072699999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBy-hE-tfU">
+                            <rect key="frame" x="206" y="16" width="60" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                            <state key="normal" title="EDIT">
+                                <color key="titleColor" red="0.14209167789999999" green="0.40589250960000001" blue="0.56941565689999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toEdit:" destination="-1" eventType="touchUpInside" id="JJD-49-1fB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="3Ez-Cz-y9I"/>
+                        <constraint firstAttribute="width" constant="286" id="Arw-Qn-ruD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IR9-WQ-ohk">
+                    <rect key="frame" x="14" y="307" width="286" height="66"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPX-yR-PF7">
+                            <rect key="frame" x="5" y="0.0" width="19" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.39014028280000002" green="0.74846657549999995" blue="0.35298768450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDK-6Y-29V">
+                            <rect key="frame" x="0.0" y="0.0" width="299" height="117"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toReview:" destination="-1" eventType="touchUpInside" id="o4X-Ea-l2g"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTm-KG-lWj">
+                            <rect key="frame" x="40" y="20" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="check_file.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toReview:" destination="-1" eventType="touchUpInside" id="lUL-pq-vZI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dG-WZ-Odm">
+                            <rect key="frame" x="189" y="15" width="77" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                            <state key="normal" title="REVIEW">
+                                <color key="titleColor" red="0.39014028280000002" green="0.74846657549999995" blue="0.35298768450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toReview:" destination="-1" eventType="touchUpInside" id="rrW-2n-THs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="GLI-Av-kPI"/>
+                        <constraint firstAttribute="width" constant="286" id="S4K-Wp-e5o"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OJx-el-iuK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="UCw-j3-ogf"/>
+                <constraint firstItem="IR9-WQ-ohk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="Wzr-RH-HcW"/>
+                <constraint firstItem="7qs-hM-G2U" firstAttribute="top" secondItem="vVc-Zs-tzV" secondAttribute="bottom" constant="35" id="cOw-ta-Mtz"/>
+                <constraint firstItem="OJx-el-iuK" firstAttribute="top" secondItem="IR9-WQ-ohk" secondAttribute="bottom" constant="35" id="dDM-Np-tjS"/>
+                <constraint firstItem="vVc-Zs-tzV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="105" id="gHr-yN-7tV"/>
+                <constraint firstItem="7qs-hM-G2U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="o4l-MR-E2J"/>
+                <constraint firstItem="IR9-WQ-ohk" firstAttribute="top" secondItem="7qs-hM-G2U" secondAttribute="bottom" constant="35" id="oPb-89-DZf"/>
+                <constraint firstItem="vVc-Zs-tzV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="x4w-d4-6cs"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check_file.png" width="64" height="64"/>
+        <image name="edit.png" width="64" height="64"/>
+        <image name="logout.png" width="64" height="64"/>
+        <image name="user.png" width="64" height="64"/>
+    </resources>
+</document>

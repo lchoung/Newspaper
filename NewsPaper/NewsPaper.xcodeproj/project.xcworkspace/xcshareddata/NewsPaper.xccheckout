@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B0BD7324-1C35-4F4E-B09B-26B014000977</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NewsPaper</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4A33F2D7-1B69-48D4-ABF2-CA0DCF085705</key>
+		<string>ssh://projects.git.vip.facebook.com/data/gitrepos/fbobjc.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Users/mendoncakeegan/NewsPaper/NewsPaper.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4A33F2D7-1B69-48D4-ABF2-CA0DCF085705</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://projects.git.vip.facebook.com/data/gitrepos/fbobjc.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4A33F2D7-1B69-48D4-ABF2-CA0DCF085705</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4A33F2D7-1B69-48D4-ABF2-CA0DCF085705</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fbobjc</string>
+		</dict>
+	</array>
+</dict>
+</plist>
